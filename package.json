@@ -38,7 +38,9 @@
   "scripts": {
     "prepare": "simple-git-hooks",
     "dev": "rolldown -c rolldown.config.ts -w",
-    "build": "rolldown -c rolldown.config.ts"
+    "build": "rolldown -c rolldown.config.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "citty": "^0.1.6",
@@ -50,7 +52,8 @@
     "eslint": "^9.20.1",
     "lint-staged": "^15.4.3",
     "rolldown": "1.0.0-beta.3",
-    "simple-git-hooks": "^2.11.1"
+    "simple-git-hooks": "^2.11.1",
+    "vitest": "^3.0.7"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
